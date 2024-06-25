@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+main{
+width: 2850px;
+height: 1768px;
+background-color: grey;
+padding-top: 349px;
+margin: auto;
+margin-top: 50px;
+}
+.cardWrapper{
+height: 1271px;
+width: 2348px;
+background-color: rgba(255, 255, 0,0.2);
+margin: auto ;
+/* margin-top: 349px; */
+/* margin-left: 251px; */
+display: flex;
+}
+.darkCard{
+    width: 1174px;
+    height: 1271px;
+background-color: rgba(0, 0, 0,0.3);
+}
+.whiteCard{
+    width: 1174px;
+    height: 1271px;
+    background-color: rgba(255, 255, 255,0.3);
+}
