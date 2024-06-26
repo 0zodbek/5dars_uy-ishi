@@ -7,16 +7,25 @@ let heading22 = document.getElementById('h22');
 let firstParagrif = document.querySelector('p');
 let button = document.getElementById('tryFigma')
 let check = document.querySelector('.check #check')
-let rightCard = document.getElementsByClassName('.cardWrapper .info')
-let leftCard = document.getElementsByClassName('.whiteCard')
+// let rightCard = document.getElementsByClassName('.cardWrapper .info')
+// let leftCard = document.getElementsByClassName('.whiteCard')
 let body = document.querySelector('body') 
-// console.log(check);
+let p12 = document.getElementById('p12')
+let h12 = document.getElementById('h12')
+let tryfigma = document.getElementById('tryfigma')
+const righCard = document.querySelector(".cardWrapper .darkCard .rightCard");
+const lighCard = document.querySelector(".cardWrapper .whiteCard .leftCard");
+
+// console.log(tryfigma);
 uzb.addEventListener('click',function(){
 heading1.textContent = 'Figma bilan ijodkorlik kuchini oching!'
 heading21.textContent = 'QORA REJIM'
 heading22.textContent = 'YORQIN REJIM'
 firstParagrif.textContent = "Dizayn o'yiningizni oshirishga tayyormisiz ?"
 button.textContent = 'Ozingizni sinang'
+h12.textContent = 'Figma bilan ijodkorlik kuchini oching!'
+p12.textContent = "Dizayn o'yiningizni oshirishga tayyormisiz ?";
+// tryfigma.textContent = 'Ozingizni sinang'
 })
 rus.addEventListener('click',function(){
     heading1.textContent = 'Раскройте силу творчества с Figma!'
@@ -32,8 +41,13 @@ eng.addEventListener('click',function(){
     firstParagrif.textContent = "Ready to elevate your design game? "
     button.textContent = 'Try Figma now'
 })
-check.addEventListener('click', function(){
-   rightCard.style.display = 'block';
-   leftCard.style.display = 'block'
-// body.innerHTML = ''
-})
+check.onclick = mode;
+function mode() {
+    if(check.checked) {
+        righCard.style.display = "none"
+        lighCard.style.display = "flex"
+    } else {
+        righCard.style.display = "flex"
+        lighCard.style.display = "none"
+    }
+}
