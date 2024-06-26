@@ -53,4 +53,4 @@ function mode() {
         righCard.style.display = "flex"
         lighCard.style.display = "none"
     }
-}
+}   ``

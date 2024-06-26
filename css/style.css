@@ -11,7 +11,7 @@
 main{
 width: 2850px;
 height: 1768px;
-background-color: grey;
+/* background-color: grey; */
 padding-top: 114px;
 margin: auto;
 margin-top: 50px;
@@ -157,6 +157,7 @@ background-color: #18181B;
     width: 1080px;
     height: 1080px;
     position: relative;
+    transition: all 1.3s ease;
     /* display: none; */
 }
 .leftCard{
@@ -165,6 +166,8 @@ background-color: #18181B;
     height: 1080px;
     /* display: flex; */
     position: relative;
+    transition: all 1.3s ease;
+
 }
 .backGround{
 position: absolute;
