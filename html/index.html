@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/font.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="cardWrapper">
-            <div class="darkCard"></div>
-            <div class="whiteCard"></div>
-        </div>    
+      <nav>
+        <div class="checkboxWrapper">
+          <h2 id="h21">DARK MODE</h2>
+          <div class="checkbox-wrapper">
+            <div class="check">
+              <input id="check" type="checkbox">
+              <label for="check"></label>
+            </div>
+          </div>
+          <h2 id="h22">LIGHT MODE</h2>
+        </div>
+        <div class="selectLanguage">
+          <button class="til" id="LanguageUZB">UZB</button>
+          <button class="til" id="LanguageRUS">RUS</button>
+          <button class="til" id="LanguageENG">ENG</button>
+        </div>
+      </nav>
+      <div class="cardWrapper">
+        <div class="darkCard"><div class="rightCard">
+          <div class="info">
+            <h1>Unlock the Power of Creativity with Figma!</h1>
+            <p>Ready to elevate your design game?</p>
+            <button id="tryFigma">Try Figma now</button>
+          </div>
+          <img
+            class="backGround"
+            src="../images/background.png"
+            alt="orqa fon rasmi"
+          />
+          <img
+            class="person"
+            src="../images/person.png"
+            alt="bu yerda shaxs rasmi"
+          />
+          <img
+            class="logo"
+            src="../images/logo.png"
+            alt="be yerda logo rasmi bor"
+          />
+        </div></div>
+        <div class="whiteCard">
+          <div class="leftCard">
+            <div class="info">
+              <h1>Unlock the Power of Creativity with Figma!</h1>
+              <p>Ready to elevate your design game?</p>
+              <button id="tryFigma">Try Figma now</button>
+            </div>
+            <img
+              class="backGround"
+              src="../images/background.png"
+              alt="orqa fon rasmi"
+            />
+            <img
+              class="person"
+              src="../images/person.png"
+              alt="bu yerda shaxs rasmi"
+            />
+            <img
+              class="logo"
+              src="../images/logo.png"
+              alt="be yerda logo rasmi bor"
+            />
+          </div>
+        </div>
+      </div>
     </main>
     <script src="../js/app.js"></script>
-</body>
+  </body>
 </html>
